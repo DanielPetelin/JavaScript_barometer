@@ -1,3 +1,12 @@
+document.getElementById('perevod').onclick = function() {
+    var mm = document.getElementById('mm_rt_st').value;
+    var p = 133.3;
+    var metr = 12;
+    var result = mm * p + 'Па; ' + mm * metr + 'метров';
+
+    document.getElementById('out_res').innerHTML = result;
+};
+
 document.getElementById('result_p_v').onclick = function() {
     var h_h = document.getElementById('h_h').value;
     var med_p = 101325;
